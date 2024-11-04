@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Bungee+Tint&family=Cairo:wght@200..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Jomhuria&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+}
+
+.parent {
+    width: 375px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0 black;
+}
+
+.parent>img {
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: hsl(0, 0%, 7%)
+}
+
+h4 {
+    text-align: center;
+    width: 90px;
+    background-color: hsl(47, 88%, 63%);
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+.date {
+    font-weight: 500;
+}
+
+p:nth-of-type(2) {
+    color: hsl(0, 0%, 42%);
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.profile {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    height: 100%;
+}
+
+.profile p {
+    font-weight: 800;
+}
+
+@media (min-width: 375px) and (max-width: 390px) {
+    .parent {
+        margin: 0 20px;
+        font-size: 14px;
+    }
+}
